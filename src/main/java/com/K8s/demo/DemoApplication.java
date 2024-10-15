@@ -12,7 +12,7 @@ public class DemoApplication {
 	@GetMapping("/message")
 	public String displayMessage() {
 
-		return "Application has been Successfully on Kubernetes and now its runing on Kubernetes...";
+		return "Application is running Successfully";
 	}
 
 	public static void main(String[] args) {
