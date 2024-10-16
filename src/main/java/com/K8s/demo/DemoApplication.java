@@ -12,7 +12,7 @@ public class DemoApplication {
 	@GetMapping("/message")
 	public String displayMessage() {
 
-		return "Application is running Successfully!!!";
+		return "Application is running Successfully on Docker!!!";
 	}	
 
 	public static void main(String[] args) {
