@@ -1,4 +1,5 @@
 FROM openjdk:17-jdk-alpine
-EXPOSE 8080
+COPY src ./src
+RUN mvn clean package -DskipTests && rm -rf /root/.m2/repository
 ADD target/devops-integration.jar devops-integration.jar
 ENTRYPOINT ["java","-jar","/devops-integration.jar"]
