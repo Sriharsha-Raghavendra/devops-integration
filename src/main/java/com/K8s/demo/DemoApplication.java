@@ -13,7 +13,7 @@ public class DemoApplication {
 	public String displayMessage() {
 
 		return "Application is running Successfully!!!";
-	}
+	}	
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
