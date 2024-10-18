@@ -72,16 +72,16 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			<plugin>
+			<!--<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
 				<version>3.3.2</version>
 				<configuration>
 					<to>
-						<image>sriharshakr1/${project.artifactId}:latest</image>
+						<image>sriharshakr1/${project.artifactId}</image>
 					</to>
 				</configuration>
-			</plugin>
+			</plugin>-->
 		</plugins>
 		<finalName>devops-integration</finalName>
 	</build>
