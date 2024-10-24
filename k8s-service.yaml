@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: devops-integration-service
+spec:
+ type: NodePort  # You can also use LoadBalancer in cloud environments
+ selector:
+   app: devops-integration-deployment
+ ports:
+   - protocol: TCP
+     port: 8090  # External port
+     targetPort: 8090  # Internal container port
+     nodePort: 30007  # Port on the node

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: devops-integration-deployment
+spec:
+ replicas: 3  # Number of pods to run
+ selector:
+   matchLabels:
+     app: devops-integration-deployment
+ template:
+   metadata:
+     labels:
+       app: devops-integration-deployment
+   spec:
+     containers:
+     - name: devops-integration-deployment
+       image: sriharshakr1/devops-integration:latest  # Image from Docker Hub
+       #imagePullPolicy: IfNotPresent
+       ports:
+       - containerPort: 8090  # Expose container's port
